@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='Kompatibel dengan X-UA' content='IE-edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='assets/css/all.min.css'>
+    <link rel='stylesheet' href='assets/css/aos.css'>
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="icon" type="image/png" href="assets/image/profil/tenang-removebg-preview.png">
+    <title>PendidikanMU | Inovasi Pendidikan</title>
+</head>
+
+<body>
+    <!-- AWAL NAVBAR -->
+    <nav class='navbar navbar-expand-lg navbar-custom sticky-top'>
+        <div class='container-fluid'>
+            <a class='navbar-brand' href='beranda.html'>PendidikanMU</a>
+            <button class='navbar-toggler' type='button' data-bs-toggle='collapse'
+                data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false'
+                aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+                <ul class='navbar-nav ms-auto'>
+                    <li class='nav-item'><a class='nav-link' href='beranda.html'>Beranda</a></li>
+                    <li class='nav-item'><a class='nav-link' href='kelas.html'>Kelas</a></li>
+                    <li class='nav-item'><a class='nav-link' href='profil.html'>Profil</a></li>
+                    <li class='nav-item'><a class='nav-link' href='kontak.html'>Kontak</a></li>
+                    <li class='nav-item'><a class='nav-link' href='info.html'>Info</a></li>
+                    <li class='nav-item'><a class='nav-link' href='kredit.html'>Kredit</a></li>
+                </ul>
+                <button class="btn btn-outline-light" onclick="toggleTheme()">
+                    🌙 / ☀️
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+    <!-- AWAL KELAS -->
+    <div class="kelas">
+        <h1 data-aos="fade-up" style="margin-bottom: 20px;">Pilih Kelasmu</h1>
+        <div class="card-kelas row-cols-3">
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/ipa.png" class="card-img-top" alt="IPA">
+                    <h3 style="color: rgb(56, 98, 236);">IPA</h3>
+                    <p class="card-text">Pelajari tentang keindahan alam disekitarmu.</p>
+                    <a class="btn btn-primary" href="class/ipa/home.html" role="button">Mulai Belajar</a>
+                </div>
+            </div>
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/ips.png" class="card-img-top" alt="IPS">
+                    <h3 style="color: rgb(56, 98, 236);">IPS</h3>
+                    <p class="card-text">Pelajari tentang hukum sosial disekitar lingkuanmu.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/bahasa_indonesia.png" class="card-img-top" alt="Bahasa_Indonesia">
+                    <h3 style="color: rgb(56, 98, 236);">Bahasa Indonesia</h3>
+                    <p class="card-text">Bangun literasi bahasa Indonesiamu.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kelas">
+        <div class="card-kelas row-cols-3">
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/agama.png" class="card-img-top" alt="Agama">
+                    <h3 style="color: rgb(56, 98, 236);">Agama</h3>
+                    <p class="card-text">Pelajari tentang hukum-hukum agama islam.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/coding.png" class="card-img-top" alt="Pemrograman Dasar">
+                    <h3 style="color: rgb(56, 98, 236);">Pemrograman</h3>
+                    <p class="card-text">Bangun keahlian dasar pemrograman Phytonmu.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/math.png" class="card-img-top" alt="Matematika">
+                    <h3 style="color: rgb(56, 98, 236);">Matematika</h3>
+                    <p class="card-text">Belajar matematikan dengan mudah.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kelas">
+        <div class="card-kelas row-cols-3">
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/b_inggris.png" class="card-img-top" alt="Bahasa_Inggris">
+                    <h3 style="color: rgb(56, 98, 236);">Bahasa Inggris</h3>
+                    <p class="card-text">Bangun kemampuan berbicaramu menjadi semakin lancar.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/bahasa_arab.png" class="card-img-top" alt="Bahasa_Arab">
+                    <h3 style="color: rgb(56, 98, 236);">Bahasa Arab</h3>
+                    <p class="card-text">Belajar bahasa Arab dengan mudah dan lancar.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+            <div class="card border-0" style="width: 18rem;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="assets/image/kelas/bahasa_jepang.png" class="card-img-top" alt="Bahasa_Jepang">
+                    <h3 style="color: rgb(56, 98, 236);">Bahasa Jepang</h3>
+                    <p class="card-text">Bangun penggunaan bahasa Jepang dengan lancar.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgama">
+                        Mulai Belajar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAgama" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Kesalahan</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Maaf masih dalam proses pengembangan
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR KELAS -->
+    <!-- AWAL FOOTER -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <!-- ABOUT -->
+                <div class="about col-md-3 mb-4">
+                    <h4 class="text1">Pendidikan<span class="text-info">MU</span></h4>
+                    <p class="text1">
+                        Platform belajar digital yang membantu kamu mengembangkan potensi diri
+                        melalui pembelajaran interaktif, fleksibel, dan menyenangkan.
+                    </p>
+                </div>
+                <!-- NAVIGASI -->
+                <div class="navigasi col-md-3 mb-4">
+                    <h5 class="text-info">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="beranda.html" class="text text-decoration-none">Beranda</a></li>
+                        <li><a href="kelas.html" class="text text-decoration-none">Kelas</a></li>
+                        <li><a href="profil.html" class="text text-decoration-none">Profil</a></li>
+                        <li><a href="kontak.html" class="text text-decoration-none">Kontak</a></li>
+                        <li><a href="info.html" class="text text-decoration-none">Info</a></li>
+                        <li><a href="kredit.html" class="text text-decoration-none">Kredit</a></li>
+                    </ul>
+                </div>
+                <!-- KONTAK -->
+                <div class="kontak col-md-3 mb-4">
+                    <h5 class="text-info">Hubungi Kami</h5>
+                    <p class="text1 mb-1">
+                        <i class="fa fa-envelope me-2"></i> zufargg64@gmail.com
+                    </p>
+                    <p class="text1 mb-1">
+                        <i class="fa fa-phone me-2"></i> +62 877 7767 5372
+                    </p>
+                    <p class="text1">
+                        <i class="fa fa-map-marker me-2"></i> Yogyakarta, Indonesia
+                    </p>
+                </div>
+                <!-- SOSIAL -->
+                <div class="sosial col-md-3 mb-4">
+                    <h5 class="text-info">Laman Pribadiku</h5>
+                    <a href="https://wa.me/6287777675372" target="_blank"
+                        class="d-block text text-decoration-none mb-2">
+                        <i class="fab fa-whatsapp me-2"></i> WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/jupparr/" target="_blank"
+                        class="d-block text text-decoration-none mb-2">
+                        <i class="fab fa-instagram me-2"></i> Instagram
+                    </a>
+                    <a href="https://linkedin.com/in/zufar-a-5a826737a/" target="_blank"
+                        class="d-block text text-decoration-none mb-2">
+                        <i class="fab fa-linkedin me-2"></i> LinkedIn
+                    </a>
+                    <a href="https://www.facebook.com/zufaratta.zufaratta" target="_blank"
+                        class="d-block text text-decoration-none">
+                        <i class="fab fa-facebook me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center pb-3">
+                <small class="text">
+                    © 2025 <strong class="text">PendidikanMU</strong>. Semua Hak Dilindungi.
+                </small>
+            </div>
+        </div>
+    </footer>
+    <!-- AKHIR FOOTER -->
+     <script src="style.js"></script>
+    <script src='assets/js/aos.js'></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src='assets/js/bootstrap.bundle.min.js'></script>
+</body>
+
+</html>
